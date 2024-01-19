@@ -1,7 +1,3 @@
-
-i'm using rails 7 , so new features has been implemented
-this contain validation
-and REST for articles
 # README
 
 This README would normally document whatever steps are necessary to get the
