@@ -2,3 +2,4 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 javascript_include_tag "application"
+import "bootstrap"
