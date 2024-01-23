@@ -14,3 +14,48 @@
  *= require_self
  */
 @import 'bootstrap';
+.navbar {
+  background-color: black !important;
+}
+.nav-link{
+  color: white !important;
+}
+#logo {
+  float: left;
+  front-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  front-weight : bold;
+}
+#home-container{
+  margin-top: 25px;
+}
+.jumbotron{
+  background-image: asset-url("unsplash.jpg");
+  backgroud-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
+#hmida{
+  background-color: white;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
