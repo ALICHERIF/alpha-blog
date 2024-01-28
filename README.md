@@ -67,3 +67,33 @@ Things you may want to cover:
 
 <td><%= button_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?');"  %></td>
 <td><%= link_to 'Return to articles listing', articles_path %></td>
+
+-------------------------------------------------
+
+<div id="page-content" class="card text-center">
+  <div class="container"  >
+  <h2 class="card-header mt-4">
+  Show article
+  </h2>
+
+      <div class="row justify-content-md-center " >
+        <div class="col-8 mt-4" id="hmida">
+          <div class="card-header font-italic">
+          <%= @article.title %>
+          </div>
+      <div class="card-body shadow p-3 mb-5 bg-white rounded">
+
+        <p class="card-text"><%= @article.description %></p>
+
+        <a href="#" ><%= link_to 'edit', edit_article_path(@article),class: "btn btn-outline-info" %></a>
+        <a href="#" ><%= link_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?');",class: "btn btn-outline-danger"  %>
+ </a>
+      </div>
+  <div class="card-footer text-muted">
+    created <%= time_ago_in_words(@article.created_at)%> ago ,updated <%= time_ago_in_words(@article.updated_at) %> ago
+  </div>
+</div>
+</div>
+
+</div>
+</div>
