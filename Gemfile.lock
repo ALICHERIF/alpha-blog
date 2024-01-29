@@ -70,6 +70,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
+    bcrypt (3.1.20)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -135,7 +136,6 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.2-x86_64-darwin)
       racc (~> 1.4)
-    pg (1.5.4)
     popper_js (2.11.8)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -229,13 +229,13 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   bootstrap (~> 5.2.2)
   capybara
   debug
   importmap-rails
   jbuilder
-  pg
   puma (~> 5.0)
   rails (~> 7.0.5)
   selenium-webdriver
