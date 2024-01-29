@@ -24,7 +24,11 @@ Things you may want to cover:
 * ...
 <a class="navbar-brand" id="logo" href="#">AlphaBlog</a>
 
-
+intersting for me
+you can assing article to user using shofle operator
+when we have artcile =('hh','eee')
+and user=("mohamed","adem")
+user.articles << article 
 
 
 <h1>show all articles</h1>
