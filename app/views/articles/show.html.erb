@@ -9,6 +9,7 @@
         <div class="col-8 mt-4" id="hmida">
           <div class="card-header font-italic">
           by by <%= @article.user.username if @article.user%>
+          <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
           </div>
       <div class="card-body shadow p-3 mb-5 bg-white rounded">
 

@@ -6,7 +6,9 @@
       <div class="row justify-content-md-center " >
         <div class="col-8 mt-4" id="hmida">
           <div class="card-header font-italic">
-            by <%= article.user.username if article.user%>
+            <% if article.user %>
+              by <%= link_to article.user.username, user_path(article.user) %>
+            <% end %>
           </div>
       <div class="card-body shadow p-3 mb-5 bg-white rounded">
         <h5 class="card-title"><%= link_to article.title,article_path(article),class: "text-success" %></h5>
