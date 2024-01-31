@@ -2,5 +2,14 @@
 <h1 class="card-header mt-4 text-center" >
   list of articles
 </h1>
+<div class="apple_pagination">
+
+    <%= will_paginate @articles, :container => false %>
+  </div>
 <%= render 'article' %>
+
+<div class="apple_pagination mb-4">
+
+    <%= will_paginate @articles, :container => false %>
+  </div>
 </div>

@@ -3,7 +3,10 @@
   <h1  class="text-center mt-4">
   alpha blogger
   </h1>
+  <div class="apple_pagination">
 
+      <%= will_paginate @users, :container => false %>
+    </div>
 
   <div id="page-content" class="card text-center">
     <div class="container"  >
@@ -32,3 +35,7 @@
   </div>
 
 </div>
+<div class="apple_pagination">
+
+    <%= will_paginate @users, :container => false %>
+  </div>
