@@ -28,7 +28,7 @@ intersting for me
 you can assing article to user using shofle operator
 when we have artcile =('hh','eee')
 and user=("mohamed","adem")
-user.articles << article 
+user.articles << article
 
 
 <h1>show all articles</h1>
@@ -101,3 +101,4 @@ user.articles << article
 
 </div>
 </div>
+user.toggle!(:admin)
