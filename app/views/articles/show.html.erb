@@ -14,10 +14,11 @@
       <div class="card-body shadow p-3 mb-5 bg-white rounded">
 
         <div class="card-text text-left"><%= simple_format(@article.description) %></div>
-
+    <% if logged_in? && @article.user == current_user %>
         <a href="#" ><%= link_to 'edit', edit_article_path(@article),class: "btn btn-outline-info" %></a>
         <a href="#" ><%= button_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?');",class: "btn btn-outline-danger"  %>
  </a>
+ <% end %>
       </div>
   <div class="card-footer text-muted">
     created <%= time_ago_in_words(@article.created_at)%> ago ,updated <%= time_ago_in_words(@article.updated_at) %> ago

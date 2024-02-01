@@ -22,8 +22,10 @@
             <%= link_to gravatar_for(user, size: 150),user %>
           </h5>
           <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
+              <% if logged_in? && user == current_user %>
           <a href="#" ><%= link_to 'view profile',user,class: "btn btn-outline-success" %></a>
           <a href="#" ><%= link_to 'edit profile', edit_user_path(user),class: "btn btn-outline-info" %></a>
+<% end %>
         </div>
     <div class="card-footer text-muted">
       joined <%= time_ago_in_words(user.created_at)%> ago
