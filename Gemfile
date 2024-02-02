@@ -43,9 +43,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-
-gem 'pg', '0.18.1', group: :production
-gem 'rails_12factor', group: :production
+#gem 'sqlite3', group: :development
+#gem 'pg', '0.18.4', group: :production
+#gem 'rails_12factor', group: :production
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -66,6 +66,10 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 group :test do
