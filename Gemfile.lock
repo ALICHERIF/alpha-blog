@@ -136,6 +136,9 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.2-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
+      racc (~> 1.4)
+    pg (0.18.1)
     popper_js (2.11.8)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -164,6 +167,11 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.5)
       actionpack (= 7.0.5)
       activesupport (= 7.0.5)
@@ -197,6 +205,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.3-x86_64-darwin)
+    sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.2)
@@ -228,6 +237,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -237,8 +247,10 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg (= 0.18.1)
   puma (~> 5.0)
   rails (~> 7.0.5)
+  rails_12factor
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
