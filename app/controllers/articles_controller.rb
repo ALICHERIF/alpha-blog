@@ -52,7 +52,7 @@ private
    params.require(:article).permit(:title, :description)
  end
  def require_same_user
-   if current_user != @article.user
+   if current_user != @article.user && !current_user.admin?
      flash[:alert] = "you can only edit your only article"
      redirect_to @article
    end
